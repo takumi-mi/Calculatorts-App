@@ -21,7 +21,7 @@ yarn build
 - 計算のステータスの表示
 
 ## 成果物
-▼vercelでホスティングしてあるので結果をみたい時はこちらからご確認ください。
-[成果物はこちら 🔽](https://calculatorts-app.vercel.app/)
+▼vercelでホスティングしてあるので結果をみたい時はこちらからご確認ください。<br>
+[成果物はこちら ▶︎](https://calculatorts-app.vercel.app/)<br>
 
-[vercelのHPはこちら 🔽](https://vercel.com/dashboard)
+[vercelのHPはこちら ▶︎](https://vercel.com/dashboard)
