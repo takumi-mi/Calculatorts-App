@@ -2,7 +2,7 @@ import React, { FC, useContext } from "react";
 import Context from "./Context";
 import { Actions } from "../reducers";
 
-const OperatorBtn: FC<{ o: string; action: Actions; addClass?: string }> = ({
+const OperatorBtn: FC<{ o?: string; action: Actions; addClass?: string }> = ({
   o,
   action,
   addClass

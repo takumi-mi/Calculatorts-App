@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 
-import "./App.scss";
+import "./App.css";
 import NumBtn from "./components/NumBtn";
 import OperatorBtn from "./components/OperatorBtn";
 import ClearBtn from "./components/ClearBtn";
 import Result from "./components/Result";
 import Context from "./components/Context";
+
 import {
   onClearClick,
   onEqualClick,
@@ -29,14 +30,15 @@ const App: React.FC = () => {
         <div className="Wrapper">
           <div className="Row">
             <ClearBtn c={"C"} action={onClearClick()} />
-            <OperatorBtn o={"÷"} action={onDivideClick()} />
+            <OperatorBtn 
+            addClass="_divided OperatorBtn"
+            action={onDivideClick()} />
           </div>
           <div className="Row">
             <NumBtn n={7} />
             <NumBtn n={8} />
             <NumBtn n={9} />
             <OperatorBtn
-              o={""}
               addClass="_multiple OperatorBtn"
               action={onMultiplyClick()}
             />
@@ -45,18 +47,24 @@ const App: React.FC = () => {
             <NumBtn n={4} />
             <NumBtn n={5} />
             <NumBtn n={6} />
-            <OperatorBtn o={"-"} action={onMinusClick()} />
+            <OperatorBtn
+              addClass="_minus OperatorBtn"
+              action={onMinusClick()} />
           </div>
           <div className="Row">
             <NumBtn n={1} />
             <NumBtn n={2} />
             <NumBtn n={3} />
-            <OperatorBtn o={"+"} action={onPlusClick()} />
+            <OperatorBtn
+              addClass="_plus OperatorBtn"
+              action={onPlusClick()} />
           </div>
           <div className="Row">
             <NumBtn n={0} addClass="_zero" />
             <OperatorBtn o={"."} addClass="_dem" action={onEqualClick()} />
-            <OperatorBtn o={"="} action={onEqualClick()} />
+            <OperatorBtn 
+            addClass="_equal OperatorBtn"
+             action={onEqualClick()} />
           </div>
         </div>
       </div>

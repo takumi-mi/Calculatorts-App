@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  opacity: 1;
+}
+button:hover {
+  transition: all 0.125s;
+}
+body {
+  background-color: #111;
+}
+.Button {
+  font-family: Oswald;
+  font-size: 40em;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.Result {
+  font-family: Oswald;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: 2.56px;
+  text-align: right;
+  color: white;
+  margin-right: 35px;
+}
+.Container {
+  width: 100%;
+  max-width: 448px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0px 40px;
+  background-color: #111;
+}
+.Container .Display {
+  width: 100%;
+  max-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #2b2b2b;
+  padding: 26px 0 14px;
+}
+.Container .Display .ResultValue {
+  font-family: Oswald;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: 2.56px;
+  text-align: right;
+  color: white;
+  margin-right: 5%;
+}
+.Container .Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px 5% 40px;
+  height: 100%;
+}
+.Container .Wrapper .Row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.Container .Wrapper .Row button {
+  font-size: 40px;
+  font-family: Oswald;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  background: #2b2b2b;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
+  color: white;
+}
+.Container .Wrapper .Row .NumBtn {
+  color: white;
+  background: #2b2b2b;
+  transition: all 0.25s;
+}
+.Container .Wrapper .Row .NumBtn_zero {
+  width: calc(210 / 448 * 100%);
+  transition: all 0.25s;
+}
+.Container .Wrapper .Row .NumBtn:active, .Container .Wrapper .Row .NumBtn_zero:active {
+  color: #2b2b2b;
+  background: white;
+  box-shadow: inset #00000070 1px 2px 5px;
+  transition: all 0.25s;
+}
+.Container .Wrapper .Row .NumBtn:focus, .Container .Wrapper .Row .NumBtn_zero:focus{
+  transition: all 0.25s;
+  color: #2b2b2b;
+  box-shadow: inset #00000070 1px 2px 5px;
+  background: white;
+}
+.Container .Wrapper .Row .OperatorBtn {
+  position: relative;
+  background-color: #ff8200;
+  color: white;
+  transition: all 0.25s;
+}
+.Container .Wrapper .Row .OperatorBtn:active {
+  background-color: white;
+  color: #ff8200;
+  box-shadow: inset #00000070 1px 2px 5px;
+}
+.Container .Wrapper .Row .OperatorBtn:focus {
+  background-color: white;
+  box-shadow: inset #00000070 1px 2px 5px;
+  color: #ff8200;
+}
+.Container .Wrapper .Row .OperatorBtn_multiple::after{
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/btn_multiple.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Container .Wrapper .Row .OperatorBtn_multiple:focus::after{
+  background-image: url("./assets/btn_multiple_col.png");
+}
+.Container .Wrapper .Row .OperatorBtn_minus::after{
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/btn_minus.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Container .Wrapper .Row .OperatorBtn_minus:focus::after{
+  background-image: url("./assets/btn_minus_col.png");
+}
+.Container .Wrapper .Row .OperatorBtn_plus::after{
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/btn_plus.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Container .Wrapper .Row .OperatorBtn_plus:focus::after{
+  background-image: url("./assets/btn_plus_col.png");
+}
+.Container .Wrapper .Row .OperatorBtn_divided::after{
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/btn_divided.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Container .Wrapper .Row .OperatorBtn_divided:focus::after{
+  background-image: url("./assets/btn_divided_col.png");
+}
+.Container .Wrapper .Row .OperatorBtn_equal::after{
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/btn_equal.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Container .Wrapper .Row .OperatorBtn_equal:focus::after{
+  background-image: url("./assets/btn_equal_col.png");
+}
+.Container .Wrapper .Row .ClearBtn {
+  color: white;
+  background-color: #a5a5a5;
+}
+.Container .Wrapper .Row .ClearBtn:active {
+  background-color: white;
+  color: #a5a5a5;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.2));
+}
