@@ -2,11 +2,20 @@
 
 ## 基本情報
 **起動方法**
+- nodebrew v8.9.4
+- Node.js v15.2.0
+- yarn v1.22.10
+- react v^16.8.6 <br>
+
+下記コマンドでモジュールのDL<br>
+
 ```
+npm run start
 yarn start
 ```
 **ビルド方法**
 ```
+npm run build
 yarn build
 ```
 
